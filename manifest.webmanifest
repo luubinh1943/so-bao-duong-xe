@@ -1,0 +1,16 @@
+{
+  "id": "./index.html",
+  "name": "Sổ bảo dưỡng xe",
+  "short_name": "Bảo dưỡng xe",
+  "description": "Ứng dụng theo dõi bảo dưỡng xe máy theo số km, hoạt động offline.",
+  "lang": "vi",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f8fa",
+  "theme_color": "#102235",
+  "icons": [
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
