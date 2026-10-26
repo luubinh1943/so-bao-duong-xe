@@ -12,9 +12,11 @@
   <link rel="icon" href="./icon-192.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <title>Sổ bảo dưỡng xe</title>
+  <meta name="app-version" content="2.0.0">
   <style>
     :root{color-scheme:light;--navy:#102235;--ink:#12273b;--muted:#607588;--soft:#edf3f7;--line:#e3ebf0;--teal:#14b8a6;--blue:#277bca;--warn:#b56b05;--danger:#c14b4b;--radius:19px;--shadow:0 10px 25px rgba(15,33,54,.05)}
     *{box-sizing:border-box}html{font-size:16px}body{margin:0;background:#f5f8fa;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding-bottom:calc(91px + env(safe-area-inset-bottom));-webkit-tap-highlight-color:transparent}button,input,textarea{font:inherit}button{cursor:pointer}.shell{max-width:700px;margin:0 auto}.top{background:var(--navy);padding:calc(25px + env(safe-area-inset-top)) 23px 93px;color:white;border-radius:0 0 28px 28px}.brand{display:flex;align-items:center;justify-content:space-between}.eyebrow{font-size:.77rem;letter-spacing:.12em;text-transform:uppercase;color:#abc8d8;font-weight:700}.title{font-size:1.63rem;letter-spacing:-.04em;font-weight:800;margin:5px 0}.top-sub{margin:6px 0 0;color:#c1d2df;font-size:.89rem}.icon-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:13px;padding:9px 11px;color:white;font-size:1.1rem}.container{padding:0 16px}.odo{background:white;border-radius:23px;padding:20px;margin-top:-69px;position:relative;box-shadow:0 12px 40px rgba(15,33,54,.12);border:1px solid rgba(255,255,255,.8)}.flex{display:flex;align-items:center;justify-content:space-between;gap:12px}.muted{color:var(--muted)}.small{font-size:.85rem}.odo-number{font-size:2.35rem;letter-spacing:-.065em;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 16px;line-height:1.1}.odo-number span{font-size:.98rem;letter-spacing:0;font-weight:600;color:var(--muted)}.btn{border:0;border-radius:12px;background:var(--navy);color:#fff;font-weight:750;padding:11px 16px;white-space:nowrap}.btn.primary{background:var(--teal);color:#052827}.btn.soft{color:var(--ink);background:var(--soft)}.btn.danger{background:#fff0f0;color:var(--danger)}.btn.full{width:100%}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:14px}.stat{border:1px solid var(--line);background:white;border-radius:16px;padding:15px 12px;box-shadow:var(--shadow)}.stat strong{display:block;font-size:1.55rem;font-weight:800;margin-bottom:4px}.stat span{font-size:.77rem;color:var(--muted);font-weight:600}.stat.red strong{color:var(--danger)}.stat.yellow strong{color:var(--warn)}.stat.grey strong{color:var(--blue)}.section-header{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:25px 2px 14px}.section-header h2{font-size:1.12rem;letter-spacing:-.025em;margin:0}.section-header span{font-size:.79rem;color:var(--muted)}.filters{display:flex;overflow:auto;gap:8px;padding-bottom:5px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.pill{background:#e9f0f4;color:#486073;border:0;padding:9px 15px;border-radius:999px;font-weight:700;font-size:.83rem;white-space:nowrap}.pill.active{background:var(--navy);color:white}.list{display:flex;flex-direction:column;gap:9px;margin:12px 0 23px}.item{display:flex;align-items:center;gap:13px;width:100%;border:1px solid var(--line);border-radius:16px;padding:14px 13px;background:white;text-align:left;box-shadow:var(--shadow);color:inherit}.glyph{height:44px;width:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:13px;background:#eff6f8;font-size:1.24rem}.itembody{flex:1;min-width:0}.itemname{font-weight:760;font-size:.98rem;margin-bottom:4px}.itemmeta{color:var(--muted);font-size:.79rem}.right{text-align:right;max-width:44%}.status{font-size:.8rem;font-weight:790;line-height:1.35}.status.due{color:var(--danger)}.status.soon{color:var(--warn)}.status.good{color:#188b7a}.status.unknown{color:#748597}.progress{height:5px;border-radius:50px;background:#e9eff2;margin-top:10px;overflow:hidden}.fill{height:100%;background:var(--teal);border-radius:50px}.fill.due{background:var(--danger)}.fill.soon{background:#d99a2f}.disclaimer{font-size:.8rem;color:#687d8d;line-height:1.5;padding:1px 3px 22px}.nav{position:fixed;bottom:0;left:0;right:0;padding:9px 15px calc(9px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:9;backdrop-filter:blur(12px)}.nav-inner{max-width:500px;width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.nav button{border:0;background:transparent;color:#657989;border-radius:12px;padding:7px 3px 3px;font-size:.73rem;font-weight:650}.nav button .em{display:block;font-size:1.28rem;margin-bottom:3px}.nav button.active{background:#e5f5f2;color:#0b796c}.pane{display:none}.pane.active{display:block}.history-entry{background:white;padding:16px;border-radius:15px;margin:9px 0;border:1px solid var(--line)}.history-km{font-weight:800}.empty{border:1px dashed #cbd8df;border-radius:16px;padding:24px;text-align:center;color:var(--muted);background:#fff;line-height:1.6}.setting-card{background:white;padding:17px;border-radius:17px;border:1px solid var(--line);margin-bottom:12px}.setting-card h3{margin:0 0 8px;font-size:1rem}.setting-card p{margin:0 0 16px;color:var(--muted);font-size:.86rem;line-height:1.6}.buttons{display:flex;gap:9px;flex-wrap:wrap}.overlay{position:fixed;inset:0;background:rgba(13,29,41,.55);z-index:20;display:none;align-items:flex-end;justify-content:center}.overlay.open{display:flex}.sheet{width:min(700px,100%);background:#fff;border-radius:25px 25px 0 0;padding:24px 22px calc(21px + env(safe-area-inset-bottom));max-height:95vh;overflow-y:auto;box-shadow:0 -20px 80px rgba(0,0,0,.1)}.sheet h3{font-size:1.28rem;margin:0 0 5px}.sheet p{color:var(--muted);line-height:1.5;margin:0 0 18px;font-size:.88rem}.sheet-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:13px}.close{background:var(--soft);color:var(--ink);border:0;border-radius:10px;width:34px;height:34px;font-size:1.3rem}.field{display:block;font-weight:720;font-size:.86rem;margin:14px 0 7px}.field + input,.field + textarea{width:100%;border:1px solid #ccd9e1;border-radius:12px;background:#fff;outline:none;padding:13px 14px;font-size:1.05rem;color:var(--ink)}.field + input:focus,.field + textarea:focus{border-color:#17a99a;box-shadow:0 0 0 3px #17a99a17}.field + textarea{resize:vertical;min-height:65px;font-size:.94rem}.hint{font-size:.78rem;color:var(--muted);margin-top:5px}.error{font-size:.86rem;color:var(--danger);min-height:20px;margin:10px 0}.hr{border:0;border-top:1px solid var(--line);margin:20px 0}.inline-info{display:flex;justify-content:space-between;background:var(--soft);border-radius:12px;padding:12px 13px;margin-top:13px;font-size:.9rem}.inline-info b{font-variant-numeric:tabular-nums}.helper{background:#f0f7fa;color:#446477;padding:13px;border-radius:13px;font-size:.82rem;line-height:1.55;margin:15px 0}.space{height:8px}input[type=file]{display:none}*:focus-visible{outline:3px solid #17a99a;outline-offset:2px}
+    .notice{display:none;border:1px solid #cce8dc;background:#ecf9f4;color:#124a38;padding:14px 15px;border-radius:15px;margin:12px 0;font-size:.86rem;line-height:1.5}.notice.show{display:block}.notice.warning{background:#fff6e8;color:#80500a;border-color:#ecd4a5}.notice.critical{background:#fff1f1;color:#9f3030;border-color:#f2c3c3}.notice h3{margin:0 0 5px;font-size:.95rem}.notice .buttons{margin-top:9px}.notice .btn{font-size:.81rem;padding:9px 11px}.version{font-size:.79rem;color:#657989;margin-top:15px}.backup-status{font-size:.83rem;color:#47687a;line-height:1.5;margin:8px 0 0}.btn:disabled{opacity:.45;cursor:not-allowed}
     @media(min-width:700px){.top{border-radius:0 0 28px 28px}.container{padding-left:24px;padding-right:24px}.odo{margin-top:-60px}}
   </style>
 </head>
@@ -23,9 +25,10 @@
   <header class="top"><div class="brand"><div><div class="eyebrow">THEO DÕI XE MÁY</div><div class="title">Sổ bảo dưỡng xe</div></div><button class="icon-btn" id="top-settings" aria-label="Cài đặt">⚙</button></div><p class="top-sub">Mọi thông tin được lưu trên thiết bị của bạn</p></header>
   <main class="container">
    <section class="odo"><div class="flex"><span class="muted small">Đồng hồ công-tơ-mét</span><span class="muted small" id="last-updated"></span></div><div class="odo-number" id="odo-value">— <span>km</span></div><button class="btn primary full" id="update-odo">＋ Cập nhật số km</button></section>
+   <div id="data-notice" class="notice" role="alert"></div><div id="update-notice" class="notice" role="status"></div>
    <section class="pane active" id="pane-home"><div class="stats"><div class="stat red"><strong id="count-due">0</strong><span>Đến / quá hạn</span></div><div class="stat yellow"><strong id="count-soon">0</strong><span>Sắp đến hạn</span></div><div class="stat grey"><strong id="count-unknown">12</strong><span>Chưa thiết lập</span></div></div><div class="section-header"><h2>Lịch bảo dưỡng</h2><span id="count-total">12 hạng mục</span></div><div class="filters" id="filter-bar"><button class="pill active" data-filter="all">Tất cả</button><button class="pill" data-filter="due">Đến hạn</button><button class="pill" data-filter="soon">Sắp đến</button><button class="pill" data-filter="unknown">Chưa thiết lập</button></div><div id="maintenance-list" class="list"></div><p class="disclaimer">Mốc km là giá trị dự kiến để theo dõi, không thay thế hướng dẫn bảo dưỡng của nhà sản xuất. Những hạng mục chưa nhập km bảo dưỡng gần nhất sẽ không được tính hạn.</p></section>
    <section class="pane" id="pane-history"><div class="section-header"><h2>Lịch sử đã bảo dưỡng</h2><span id="history-count"></span></div><div id="history-list"></div></section>
-   <section class="pane" id="pane-settings"><div class="section-header"><h2>Cài đặt & dữ liệu</h2></div><div class="setting-card"><h3>Sao lưu dữ liệu</h3><p>Xuất toàn bộ số km, 12 hạng mục và lịch sử thành file JSON, hoặc khôi phục từ file đã lưu. Không cần tài khoản hay máy chủ.</p><div class="buttons"><button class="btn" id="export-btn">↓ Xuất bản sao</button><button class="btn soft" id="import-btn">↑ Nhập dữ liệu</button></div><input type="file" id="import-file" accept=".json,application/json"></div><div class="setting-card"><h3>Quy tắc nhắc bảo dưỡng</h3><p>Sắp đến hạn khi còn không quá 10% chu kỳ, nhưng tối thiểu 100 km và tối đa 500 km. Sau khi xác nhận đã bảo dưỡng, chu kỳ mới bắt đầu từ số km hiện tại.</p><p>Ứng dụng hoạt động offline và chỉ tính lại khi bạn cập nhật km. Không tự đọc đồng hồ xe hay gửi thông báo đẩy theo quãng đường.</p></div><div class="setting-card"><h3>Xóa dữ liệu trên máy</h3><p>Đưa ứng dụng về trạng thái ban đầu. Hãy xuất bản sao trước vì thao tác không thể hoàn tác.</p><button class="btn danger" id="reset-btn">Xóa toàn bộ dữ liệu</button></div><div class="disclaimer">Phiên bản cá nhân • 100% lưu cục bộ • Không gửi dữ liệu ra Internet</div></section>
+   <section class="pane" id="pane-settings"><div class="section-header"><h2>Cài đặt & dữ liệu</h2></div><div class="setting-card"><h3>Sao lưu dữ liệu</h3><p>Xuất toàn bộ số km, 12 hạng mục và lịch sử thành file JSON, hoặc khôi phục từ file đã lưu. Không cần tài khoản hay máy chủ.</p><div class="buttons"><button class="btn" id="export-btn">↓ Xuất bản sao</button><button class="btn soft" id="share-btn">↗ Chia sẻ / Lưu vào Tệp</button><button class="btn soft" id="import-btn">↑ Khôi phục từ tệp</button></div><input type="file" id="import-file" accept=".json,application/json"><div id="backup-status" class="backup-status"></div><p style="margin-top:12px">Bản sao phải được lưu bên ngoài ứng dụng, ví dụ Tệp (Files) hoặc máy tính. Nên sao lưu trước mỗi lần cập nhật lớn và sau khi bảo dưỡng.</p></div><div class="setting-card"><h3>Cập nhật phần mềm</h3><p>Khi có Internet, ứng dụng tự kiểm tra phiên bản mới. Dữ liệu và lịch sử được lưu riêng, không nằm trong bộ nhớ đệm của mã nguồn.</p><button class="btn soft" id="check-update">⟳ Kiểm tra bản cập nhật</button><div id="update-status" class="backup-status">Chưa kiểm tra.</div><div class="version">Phiên bản ứng dụng: <strong id="app-version">2.0.0</strong></div></div><div class="setting-card"><h3>Quy tắc nhắc bảo dưỡng</h3><p>Sắp đến hạn khi còn không quá 10% chu kỳ, nhưng tối thiểu 100 km và tối đa 500 km. Sau khi xác nhận đã bảo dưỡng, chu kỳ mới bắt đầu từ số km hiện tại.</p><p>Ứng dụng hoạt động offline và chỉ tính lại khi bạn cập nhật km. Không tự đọc đồng hồ xe hay gửi thông báo đẩy theo quãng đường.</p></div><div class="setting-card"><h3>Xóa dữ liệu trên máy</h3><p>Đưa ứng dụng về trạng thái ban đầu. Hãy xuất bản sao trước vì thao tác không thể hoàn tác.</p><button class="btn danger" id="reset-btn">Xóa toàn bộ dữ liệu</button></div><div class="disclaimer">Phiên bản cá nhân • 100% lưu cục bộ • Không gửi dữ liệu ra Internet</div></section>
   </main>
  </div>
  <nav class="nav" aria-label="Điều hướng"><div class="nav-inner"><button class="active" data-tab="home"><span class="em">◫</span>Tổng quan</button><button data-tab="history"><span class="em">▤</span>Lịch sử</button><button data-tab="settings"><span class="em">⚙</span>Cài đặt</button></div></nav>
@@ -41,11 +44,85 @@
    ['bi-con','Bi côn',15000,'⚙️'],['nuoc-lam-mat','Nước làm mát',20000,'💧'],['ma-phanh','Má phanh',15000,'🛑']
   ];
   const defaults=()=>({version:1,currentKm:null,updatedAt:null,items:specs.map(([id,name,interval,icon])=>({id,name,interval,icon,lastKm:null,note:''})),history:[]});
-  let state=load(),filter='all';const $=id=>document.getElementById(id),fmt=n=>Number(n).toLocaleString('vi-VN'),safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  function load(){try{const data=JSON.parse(localStorage.getItem(KEY));validate(data);return data;}catch(_){return defaults();}}
-  function validate(d){if(!d||d.version!==1||!Array.isArray(d.items)||d.items.length!==12||!Array.isArray(d.history)||!(d.currentKm===null||validKm(d.currentKm)))throw Error('Dữ liệu không hợp lệ.');const ids=new Set();for(const item of d.items){if(!specs.some(s=>s[0]===item.id)||ids.has(item.id)||!validKm(item.interval)||item.interval===0||!(item.lastKm===null||validKm(item.lastKm))||(item.lastKm!==null&&d.currentKm!==null&&item.lastKm>d.currentKm))throw Error('Mốc bảo dưỡng không hợp lệ.');ids.add(item.id)}for(const e of d.history){if(!e||!specs.some(s=>s[0]===e.itemId)||!validKm(e.km)||typeof e.at!=='string')throw Error('Lịch sử không hợp lệ.')}if(JSON.stringify(d).length>3000000)throw Error('Tệp quá lớn.');}
+  const APP_VERSION='2.0.0', RECOVERY_KEY=KEY+'-recovery', FORMAT='so-bao-duong-xe-backup';
+  let filter='all', dataLocked=false, loadWarning='', state;
+  const $=id=>document.getElementById(id),fmt=n=>Number(n).toLocaleString('vi-VN'),safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function validKm(n){return Number.isSafeInteger(n)&&n>=0&&n<=999999999;}
-  function save(){localStorage.setItem(KEY,JSON.stringify(state));render();}
+  function validate(d){
+    if(!d||d.version!==1||!Array.isArray(d.items)||d.items.length!==12||!Array.isArray(d.history)||!(d.currentKm===null||validKm(d.currentKm)))throw Error('Cấu trúc dữ liệu không hợp lệ hoặc định dạng chưa được hỗ trợ.');
+    const ids=new Set();
+    for(const it of d.items){
+      if(!it||!specs.some(s=>s[0]===it.id)||ids.has(it.id)||!validKm(it.interval)||it.interval===0||!(it.lastKm===null||validKm(it.lastKm))||(it.lastKm!==null&&(d.currentKm===null||it.lastKm>d.currentKm))||typeof it.name!=='string'||typeof it.icon!=='string'||typeof it.note!=='string'||it.note.length>10000)throw Error('Mốc bảo dưỡng không hợp lệ.');
+      ids.add(it.id);
+    }
+    for(const e of d.history){if(!e||!specs.some(s=>s[0]===e.itemId)||!validKm(e.km)||typeof e.at!=='string'||Number.isNaN(Date.parse(e.at)))throw Error('Lịch sử bảo dưỡng không hợp lệ.');}
+    if(JSON.stringify(d).length>3000000)throw Error('Dữ liệu vượt giới hạn 3 MB.');
+    return d;
+  }
+  function parseStored(raw){if(raw===null)return null;const d=JSON.parse(raw);return validate(d);}
+  function load(){
+    let main=null,recovery=null,hasMain=false,hasRecovery=false;
+    try{const raw=localStorage.getItem(KEY);hasMain=raw!==null;if(hasMain)main=parseStored(raw);}catch(e){hasMain=true;}
+    if(main)return main;
+    try{const raw=localStorage.getItem(RECOVERY_KEY);hasRecovery=raw!==null;if(hasRecovery)recovery=parseStored(raw);}catch(e){hasRecovery=true;}
+    if(recovery){loadWarning='Dữ liệu chính không đọc được. Đã mở bản dự phòng lưu trên máy; có thể thiếu thay đổi gần nhất. Hãy xuất tệp sao lưu ngay và kiểm tra lịch sử.';return recovery;}
+    if(hasMain||hasRecovery){dataLocked=true;loadWarning='Không đọc được dữ liệu đã lưu. Ứng dụng đã tạm khóa ghi để tránh ghi đè. Bạn có thể tải dữ liệu gốc về hoặc khôi phục bằng tệp sao lưu. Không xóa ứng dụng hay dữ liệu Safari.';}
+    return defaults();
+  }
+  state=load();
+  function save(){
+    if(dataLocked){alert('Dữ liệu đang bị khóa bảo vệ. Vui lòng khôi phục từ tệp sao lưu.');return false;}
+    try{
+      validate(state);
+      const old=localStorage.getItem(KEY);
+      if(old!==null){try{parseStored(old);localStorage.setItem(RECOVERY_KEY,old);}catch(e){/* preserve existing good recovery */}}
+      const raw=JSON.stringify(state);
+      localStorage.setItem(KEY,raw);
+      if(localStorage.getItem(KEY)!==raw)throw Error('Không đọc lại được dữ liệu đã lưu.');
+      render();return true;
+    }catch(e){
+      try{state=load();}catch(_){}
+      render();alert('Không thể ghi dữ liệu. Bộ nhớ có thể đầy hoặc bị chặn. Hãy sao lưu và kiểm tra bộ nhớ. Chi tiết: '+e.message);return false;
+    }
+  }
+  function checksum(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return (h>>>0).toString(16).padStart(8,'0');}
+  function encodeBackup(d){const contents=JSON.stringify(d);return JSON.stringify({format:FORMAT,backupVersion:2,appVersion:APP_VERSION,exportedAt:new Date().toISOString(),checksum:'fnv1a32:'+checksum(contents),data:d},null,2);}
+  function decodeBackup(text){
+    if(text.length>3500000)throw Error('Tệp quá lớn.');
+    const input=JSON.parse(text);if(!input)throw Error('Tệp trống hoặc sai định dạng.');
+    if(input.format===FORMAT){
+      if(input.backupVersion!==2||typeof input.checksum!=='string')throw Error('Định dạng sao lưu chưa được hỗ trợ.');
+      if(input.checksum!=='fnv1a32:'+checksum(JSON.stringify(input.data)))throw Error('Mã kiểm tra không khớp: tệp có thể bị lỗi hoặc bị sửa.');
+      return validate(input.data);
+    }
+    return validate(input); // Cho phép nhập tệp JSON của phiên bản PWA cũ.
+  }
+  function downloadText(contents,filename){const blob=new Blob([contents],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),15000);}
+  function showDataNotice(){
+    const el=$('data-notice');if(!loadWarning){el.className='notice';return;}
+    el.className='notice show '+(dataLocked?'critical':'warning');
+    el.innerHTML=`<h3>${dataLocked?'⚠ Dữ liệu cần khôi phục':'⚠ Đang dùng bản dự phòng'}</h3><div>${safe(loadWarning)}</div><div class="buttons">${dataLocked?'<button class="btn soft" id="raw-data">↓ Lưu bản dữ liệu gốc</button><button class="btn" id="repair-import">↑ Nhập bản sao</button>':'<button class="btn" id="repair-export">↓ Sao lưu ngay</button>'}</div>`;
+    $('raw-data')?.addEventListener('click',()=>{const a=localStorage.getItem(KEY),b=localStorage.getItem(RECOVERY_KEY);downloadText(JSON.stringify({rawPrimary:a,rawRecovery:b},null,2),'so-bao-duong-du-lieu-goc.json');});
+    $('repair-import')?.addEventListener('click',()=>$('import-file').click());
+    $('repair-export')?.addEventListener('click',()=>exportBackup());
+  }
+  function exportBackup(){try{validate(state);downloadText(encodeBackup(state),'so-bao-duong-backup-'+new Date().toISOString().slice(0,10)+'.json');setBackupStatus('Đã yêu cầu tải bản sao. Hãy mở ứng dụng Tệp/Downloads và kiểm tra tệp đã được lưu.');}catch(e){alert('Không thể xuất bản sao: '+e.message)}}
+  async function shareBackup(){
+    try{
+      validate(state);
+      const filename='so-bao-duong-backup-'+new Date().toISOString().slice(0,10)+'.json';
+      const file=new File([encodeBackup(state)],filename,{type:'application/json'});
+      if(!navigator.share||!navigator.canShare||!navigator.canShare({files:[file]})){
+        exportBackup();setBackupStatus('Thiết bị không hỗ trợ chia sẻ tệp trực tiếp. Đã yêu cầu tải xuống; hãy kiểm tra thư mục Downloads/Tệp.');return;
+      }
+      await navigator.share({files:[file],title:'Bản sao Sổ bảo dưỡng xe'});
+      setBackupStatus('Đã mở chia sẻ. Hãy xác nhận tệp thật sự nằm trong Tệp/Files hoặc nơi lưu do bạn chọn.');
+    }catch(e){if(e.name!=='AbortError')alert('Không chia sẻ được: '+e.message);}
+  }
+  function setBackupStatus(s){$('backup-status').textContent=s;}
+  function updateWriteControls(){
+    for(const id of ['update-odo','reset-btn'])$(id).disabled=dataLocked;
+  }
   function mode(it){if(state.currentKm===null||it.lastKm===null)return {type:'unknown',remaining:null,label:'Chưa thiết lập',due:null,pct:0};const due=it.lastKm+it.interval,remaining=due-state.currentKm,pct=Math.max(0,Math.min(100,((state.currentKm-it.lastKm)/it.interval)*100));const warn=Math.max(100,Math.min(500,Math.round(it.interval*0.1)));if(remaining<=0)return {type:'due',remaining,label:remaining===0?'Đến hạn ngay':`Quá ${fmt(-remaining)} km`,due,pct};if(remaining<=warn)return {type:'soon',remaining,label:`Còn ${fmt(remaining)} km`,due,pct};return {type:'good',remaining,label:`Còn ${fmt(remaining)} km`,due,pct};}
   function render(){
    $('odo-value').innerHTML=(state.currentKm===null?'—':fmt(state.currentKm))+' <span>km</span>';
@@ -67,7 +144,7 @@
   function openOdo(){showSheet(`${sheetTitle('Cập nhật công-tơ-mét','Nhập tổng số km xe đã chạy hiện tại.')}
     <label class="field" for="new-odo">Số km hiện tại</label><input id="new-odo" inputmode="numeric" type="text" placeholder="Ví dụ: 13500" value="${state.currentKm??''}">
     <div class="hint">Cho phép sửa lại số km nếu trước đó nhập sai, nhưng không được nhỏ hơn mốc bảo dưỡng đã ghi.</div><div id="form-error" class="error"></div><button class="btn primary full" id="save-odo">Lưu số km</button>`);
-   $('save-odo').onclick=()=>{const n=parseKm($('new-odo').value);if(n===null)return err('Hãy nhập số km nguyên không âm.');const max=Math.max(0,...state.items.map(i=>i.lastKm??0),...state.history.map(e=>e.km));if(n<max)return err(`Không thể nhập nhỏ hơn ${fmt(max)} km đã lưu trong dữ liệu.`);state.currentKm=n;state.updatedAt=new Date().toISOString();save();closeSheet();};
+   $('save-odo').onclick=()=>{const n=parseKm($('new-odo').value);if(n===null)return err('Hãy nhập số km nguyên không âm.');const max=Math.max(0,...state.items.map(i=>i.lastKm??0),...state.history.map(e=>e.km));if(n<max)return err(`Không thể nhập nhỏ hơn ${fmt(max)} km đã lưu trong dữ liệu.`);state.currentKm=n;state.updatedAt=new Date().toISOString();if(save())closeSheet();};
   }
   function openItem(id){const it=state.items.find(x=>x.id===id);if(!it)return;const m=mode(it);showSheet(`${sheetTitle(safe(it.name),'Chỉnh mốc bảo dưỡng riêng cho hạng mục này.')}
     <div class="inline-info"><span>Trạng thái</span><b class="status ${m.type}">${m.label}</b></div>
@@ -78,17 +155,77 @@
     <div id="form-error" class="error"></div><button class="btn primary full" id="save-item">Lưu hạng mục</button>
     <hr class="hr"><button class="btn soft full" id="mark-service" ${state.currentKm===null?'disabled':''}>✓ Đã bảo dưỡng tại ${state.currentKm===null?'—':fmt(state.currentKm)} km</button>
     <div class="hint">Nút này ghi một sự kiện vào lịch sử và bắt đầu chu kỳ mới.</div>`);
-   $('save-item').onclick=()=>{const interval=parseKm($('item-interval').value);const raw=$('item-last').value.trim();const last=raw===''?null:parseKm(raw);if(interval===null||interval===0)return err('Chu kỳ phải là số km nguyên lớn hơn 0.');if(raw!==''&&last===null)return err('Mốc km gần nhất không hợp lệ.');if(last!==null&&(state.currentKm===null||last>state.currentKm))return err('Mốc lần trước không thể lớn hơn số km hiện tại.');it.interval=interval;it.lastKm=last;it.note=$('item-note').value.trim();save();closeSheet();};
-   $('mark-service').onclick=()=>{if(state.currentKm===null)return;const yes=confirm(`Xác nhận đã bảo dưỡng ${it.name} tại ${fmt(state.currentKm)} km?`);if(!yes)return;it.lastKm=state.currentKm;state.history.push({id:crypto.randomUUID?.()||String(Date.now()),itemId:it.id,km:state.currentKm,at:new Date().toISOString()});save();closeSheet();};
+   $('save-item').onclick=()=>{const interval=parseKm($('item-interval').value);const raw=$('item-last').value.trim();const last=raw===''?null:parseKm(raw);if(interval===null||interval===0)return err('Chu kỳ phải là số km nguyên lớn hơn 0.');if(raw!==''&&last===null)return err('Mốc km gần nhất không hợp lệ.');if(last!==null&&(state.currentKm===null||last>state.currentKm))return err('Mốc lần trước không thể lớn hơn số km hiện tại.');it.interval=interval;it.lastKm=last;it.note=$('item-note').value.trim();if(save())closeSheet();};
+   $('mark-service').onclick=()=>{if(state.currentKm===null)return;const yes=confirm(`Xác nhận đã bảo dưỡng ${it.name} tại ${fmt(state.currentKm)} km?`);if(!yes)return;it.lastKm=state.currentKm;state.history.push({id:crypto.randomUUID?.()||String(Date.now()),itemId:it.id,km:state.currentKm,at:new Date().toISOString()});if(save())closeSheet();};
   }
   function tab(t){document.querySelectorAll('.pane').forEach(e=>e.classList.toggle('active',e.id===`pane-${t}`));document.querySelectorAll('[data-tab]').forEach(e=>e.classList.toggle('active',e.dataset.tab===t));window.scrollTo({top:0,behavior:'instant'});}
   document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));$('top-settings').onclick=()=>tab('settings');$('update-odo').onclick=openOdo;
   $('filter-bar').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x.dataset.filter===filter));render();});
   $('overlay').addEventListener('click',e=>{if(e.target===$('overlay'))closeSheet()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet();});
-  $('export-btn').onclick=()=>{const json=JSON.stringify(state,null,2),blob=new Blob([json],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`so-bao-duong-${new Date().toISOString().slice(0,10)}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);};
-  $('import-btn').onclick=()=>$('import-file').click();$('import-file').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const d=JSON.parse(await file.text());validate(d);if(!confirm('Thay thế TẤT CẢ dữ liệu hiện tại bằng dữ liệu trong tệp?'))return;state=d;save();alert('Đã khôi phục dữ liệu.');}catch(ex){alert('Không thể nhập: '+ex.message)}finally{e.target.value=''}};
-  $('reset-btn').onclick=()=>{if(!confirm('Xóa toàn bộ dữ liệu? Thao tác không thể hoàn tác.'))return;if(!confirm('Xác nhận xóa tất cả 12 mốc và lịch sử?'))return;state=defaults();save();tab('home');};
-  if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+  $('export-btn').onclick=exportBackup;
+  $('share-btn').onclick=shareBackup;
+  $('import-btn').onclick=()=>$('import-file').click();
+  $('import-file').onchange=async e=>{
+    const file=e.target.files?.[0];if(!file)return;
+    try{
+      if(file.size>3500000)throw Error('Tệp quá lớn (tối đa 3,5 MB).');
+      const candidate=decodeBackup(await file.text());
+      const summary=`Sao lưu có ${candidate.history.length} lượt bảo dưỡng; đồng hồ ${candidate.currentKm===null?'chưa thiết lập':fmt(candidate.currentKm)+' km'}.`;
+      if(!confirm(summary+'\n\nBạn có chắc muốn KHÔI PHỤC? Dữ liệu đang có trên điện thoại sẽ bị thay thế. Nên xuất bản sao hiện tại trước.'))return;
+      if(!confirm('Xác nhận lần cuối: thay thế toàn bộ mốc bảo dưỡng và lịch sử hiện tại bằng tệp này?'))return;
+      // Sao lưu dữ liệu trước phục hồi rồi mới ghi. Không xóa nếu việc ghi thất bại.
+      const oldState=state,oldLock=dataLocked;
+      try{
+        const prior=localStorage.getItem(KEY);
+        if(prior!==null){try{parseStored(prior);localStorage.setItem(RECOVERY_KEY,prior);}catch(_) {}}
+        const serialized=JSON.stringify(candidate);
+        localStorage.setItem(KEY,serialized);
+        if(localStorage.getItem(KEY)!==serialized)throw Error('Không thể xác nhận dữ liệu đã lưu.');
+        state=candidate;dataLocked=false;loadWarning='';render();showDataNotice();updateWriteControls();
+        setBackupStatus('Khôi phục thành công '+new Date().toLocaleString('vi-VN')+'.');alert('Đã khôi phục dữ liệu thành công.');
+      }catch(err){state=oldState;dataLocked=oldLock;throw err;}
+    }catch(ex){alert('Không thể nhập: '+ex.message)}finally{e.target.value=''}
+  };
+  $('reset-btn').onclick=()=>{
+    if(dataLocked){alert('Ứng dụng đang khóa dữ liệu để bảo vệ bản cũ. Chỉ có thể khôi phục từ tệp sao lưu.');return;}
+    if(!confirm('Xóa toàn bộ dữ liệu? Hãy xuất bản sao JSON trước.'))return;
+    if(!confirm('Xác nhận XÓA tất cả 12 mốc và lịch sử?'))return;
+    state=defaults();if(save())tab('home');
+  };
+  $('app-version').textContent=APP_VERSION;
+  let registration=null,hadController=!!navigator.serviceWorker?.controller,refreshOffered=false;
+  function offerReload(){
+    if(refreshOffered)return;refreshOffered=true;
+    const el=$('update-notice');el.className='notice show';el.innerHTML='<h3>✓ Đã tải phiên bản ứng dụng mới</h3><div>Nhấn tải lại để áp dụng. Số km và lịch sử bảo dưỡng không bị xóa khi cập nhật mã nguồn.</div><div class="buttons"><button class="btn" id="apply-update">⟳ Tải lại ứng dụng</button></div>';
+    $('apply-update').onclick=()=>{if(!dataLocked){try{const raw=localStorage.getItem(KEY);if(raw!==null)parseStored(raw);}catch(_){alert('Phát hiện dữ liệu lưu có vấn đề. Hãy sao lưu hoặc khôi phục trước khi tải lại.');return;}}location.reload();};
+  }
+  async function checkUpdates(manual=false){
+    const status=$('update-status');
+    if(!('serviceWorker' in navigator)){status.textContent='Trình duyệt này không hỗ trợ Service Worker.';return;}
+    if(!navigator.onLine){if(manual)status.textContent='Đang offline. Dữ liệu vẫn dùng được; cần Internet để cập nhật.';return;}
+    try{
+      registration=registration||await navigator.serviceWorker.ready;
+      await registration.update();
+      if(manual)status.textContent='Đã gửi yêu cầu kiểm tra lúc '+new Date().toLocaleTimeString('vi-VN')+'. Nếu có bản mới, ứng dụng sẽ báo sau khi tải xong.';
+    }catch(e){if(manual)status.textContent='Không kiểm tra được: '+e.message;}
+  }
+  $('check-update').onclick=()=>checkUpdates(true);
+  if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){
+    navigator.serviceWorker.addEventListener('controllerchange',()=>{if(hadController)offerReload();hadController=true;});
+    window.addEventListener('load',async()=>{
+      try{
+        registration=await navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'});
+        if(registration.waiting)offerReload();
+        registration.addEventListener('updatefound',()=>{const worker=registration.installing;if(worker)worker.addEventListener('statechange',()=>{if(worker.state==='activated'&&hadController)offerReload();});});
+        checkUpdates(false);
+      }catch(e){$('update-status').textContent='Không đăng ký được chế độ offline: '+e.message;}
+    });
+    window.addEventListener('online',()=>checkUpdates(false));
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkUpdates(false);});
+  }else{$('update-status').textContent='Chế độ cập nhật tự động cần đường dẫn HTTPS.';}
+  showDataNotice();
+  updateWriteControls();
+
   render();
  })();
  </script>
