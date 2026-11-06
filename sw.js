@@ -1,6 +1,6 @@
 /* Sổ bảo dưỡng xe - chỉ lưu bộ mã ứng dụng; KHÔNG đụng đến localStorage. */
-const APP_CACHE='so-bao-duong-app-v2.0.0';
-const FILES=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
+const APP_CACHE='so-bao-duong-app-v5.0.0';
+const FILES=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./img-engine-oil.png','./img-clutch-shoes.png','./img-variator-rollers.png','./img-front-tire.png','./img-rear-tire.png','./img-air-filter-real.png','./img-gear-oil-real.png','./img-spark-plug-real.png','./img-brake-fluid-real.png','./img-coolant-real.png','./img-cvt-belt-real.png','./img-brake-pads-real.png','./extra-placeholder.svg'];
 const CACHE_PREFIXES=['so-bao-duong-v','so-bao-duong-app-v'];
 self.addEventListener('install',event=>{
   // Tải đủ bộ tệp trước khi kích hoạt; nếu thất bại, SW cũ vẫn hoạt động.
@@ -20,6 +20,14 @@ self.addEventListener('fetch',event=>{
   if(url.origin!==self.location.origin||!url.pathname.startsWith(new URL(self.registration.scope).pathname))return;
   const isNavigation=request.mode==='navigate';
   const isAsset=FILES.some(path=>new URL(path,self.registration.scope).pathname===url.pathname);
+  const isOptionalExtra=/\/extra-[a-z-]+\.(?:png|jpg|jpeg|webp)$/.test(url.pathname);
+  if(isOptionalExtra){
+    event.respondWith((async()=>{
+      const cache=await caches.open(APP_CACHE);
+      try{const res=await fetch(request);if(res.ok){await cache.put(request,res.clone());return res;}}catch(_){ }
+      return (await cache.match(request))||Response.error();
+    })());return;
+  }
   if(!isNavigation&&!isAsset)return;
   if(isNavigation){
     // Online: thử mã mới nhất; Offline: dùng gói đã lưu an toàn.
