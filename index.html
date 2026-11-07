@@ -12,14 +12,54 @@
   <link rel="icon" href="./icon-192.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <title>Sổ bảo dưỡng xe</title>
-  <meta name="app-version" content="1.9.4">
+  <meta name="app-version" content="1.10.0">
   <style>
     :root{color-scheme:light;--navy:#102235;--ink:#12273b;--muted:#607588;--soft:#edf3f7;--line:#e3ebf0;--teal:#14b8a6;--blue:#277bca;--warn:#b56b05;--danger:#c14b4b;--radius:19px;--shadow:0 10px 25px rgba(15,33,54,.05)}
-    *{box-sizing:border-box}html{font-size:16px}body{margin:0;background:#f5f8fa;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding-bottom:calc(91px + env(safe-area-inset-bottom));-webkit-tap-highlight-color:transparent}button,input,textarea{font:inherit}button{cursor:pointer}.shell{max-width:700px;margin:0 auto}.top{background:var(--navy);padding:calc(25px + env(safe-area-inset-top)) 23px 93px;color:white;border-radius:0 0 28px 28px}.brand{display:flex;align-items:center;justify-content:space-between}.eyebrow{font-size:.77rem;letter-spacing:.12em;text-transform:uppercase;color:#abc8d8;font-weight:700}.title{font-size:1.63rem;letter-spacing:-.04em;font-weight:800;margin:5px 0}.top-sub{margin:6px 0 0;color:#c1d2df;font-size:.89rem}.icon-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:13px;padding:9px 11px;color:white;font-size:1.1rem}.container{padding:0 16px}.odo{background:white;border-radius:23px;padding:20px;margin-top:-69px;position:relative;box-shadow:0 12px 40px rgba(15,33,54,.12);border:1px solid rgba(255,255,255,.8)}.flex{display:flex;align-items:center;justify-content:space-between;gap:12px}.muted{color:var(--muted)}.small{font-size:.85rem}.odo-number{font-size:2.35rem;letter-spacing:-.065em;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 16px;line-height:1.1}.odo-number span{font-size:.98rem;letter-spacing:0;font-weight:600;color:var(--muted)}.btn{border:0;border-radius:12px;background:var(--navy);color:#fff;font-weight:750;padding:11px 16px;white-space:nowrap}.btn.primary{background:var(--teal);color:#052827}.btn.soft{color:var(--ink);background:var(--soft)}.btn.danger{background:#fff0f0;color:var(--danger)}.btn.full{width:100%}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:14px}.stat{border:1px solid var(--line);background:white;border-radius:16px;padding:15px 12px;box-shadow:var(--shadow)}.stat strong{display:block;font-size:1.55rem;font-weight:800;margin-bottom:4px}.stat span{font-size:.77rem;color:var(--muted);font-weight:600}.stat.red strong{color:var(--danger)}.stat.yellow strong{color:var(--warn)}.stat.grey strong{color:var(--blue)}.section-header{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:25px 2px 14px}.section-header h2{font-size:1.12rem;letter-spacing:-.025em;margin:0}.section-header span{font-size:.79rem;color:var(--muted)}.filters{display:flex;overflow:auto;gap:8px;padding-bottom:5px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.pill{background:#e9f0f4;color:#486073;border:0;padding:9px 15px;border-radius:999px;font-weight:700;font-size:.83rem;white-space:nowrap}.pill.active{background:var(--navy);color:white}.list{display:flex;flex-direction:column;gap:9px;margin:12px 0 23px}.item{display:flex;align-items:center;gap:13px;width:100%;border:1px solid var(--line);border-radius:16px;padding:14px 13px;background:white;text-align:left;box-shadow:var(--shadow);color:inherit}.glyph{height:44px;width:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:13px;background:#eff6f8;font-size:1.24rem}.itembody{flex:1;min-width:0}.itemname{font-weight:760;font-size:.98rem;margin-bottom:4px}.itemmeta{color:var(--muted);font-size:.79rem}.right{text-align:right;max-width:44%}.status{font-size:.8rem;font-weight:790;line-height:1.35}.status.due{color:var(--danger)}.status.soon{color:var(--warn)}.status.good{color:#188b7a}.status.unknown{color:#748597}.progress{height:5px;border-radius:50px;background:#e9eff2;margin-top:10px;overflow:hidden}.fill{height:100%;background:var(--teal);border-radius:50px}.fill.due{background:var(--danger)}.fill.soon{background:#d99a2f}.disclaimer{font-size:.8rem;color:#687d8d;line-height:1.5;padding:1px 3px 22px}.nav{position:fixed;bottom:0;left:0;right:0;padding:9px 15px calc(9px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:9;backdrop-filter:blur(12px)}.nav-inner{max-width:500px;width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}.nav button{border:0;background:transparent;color:#657989;border-radius:12px;padding:7px 3px 3px;font-size:.73rem;font-weight:650}.nav button .em{display:block;font-size:1.28rem;margin-bottom:3px}.nav button.active{background:#e5f5f2;color:#0b796c}.pane{display:none}.pane.active{display:block}.history-entry{background:white;padding:16px;border-radius:15px;margin:9px 0;border:1px solid var(--line)}.history-km{font-weight:800}.empty{border:1px dashed #cbd8df;border-radius:16px;padding:24px;text-align:center;color:var(--muted);background:#fff;line-height:1.6}.setting-card{background:white;padding:17px;border-radius:17px;border:1px solid var(--line);margin-bottom:12px}.setting-card h3{margin:0 0 8px;font-size:1rem}.setting-card p{margin:0 0 16px;color:var(--muted);font-size:.86rem;line-height:1.6}.buttons{display:flex;gap:9px;flex-wrap:wrap}.overlay{position:fixed;inset:0;background:rgba(13,29,41,.55);z-index:20;display:none;align-items:flex-end;justify-content:center}.overlay.open{display:flex}.sheet{width:min(700px,100%);background:#fff;border-radius:25px 25px 0 0;padding:24px 22px calc(21px + env(safe-area-inset-bottom));max-height:95vh;overflow-y:auto;box-shadow:0 -20px 80px rgba(0,0,0,.1)}.sheet h3{font-size:1.28rem;margin:0 0 5px}.sheet p{color:var(--muted);line-height:1.5;margin:0 0 18px;font-size:.88rem}.sheet-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:13px}.close{background:var(--soft);color:var(--ink);border:0;border-radius:10px;width:34px;height:34px;font-size:1.3rem}.field{display:block;font-weight:720;font-size:.86rem;margin:14px 0 7px}.field + input,.field + textarea{width:100%;border:1px solid #ccd9e1;border-radius:12px;background:#fff;outline:none;padding:13px 14px;font-size:1.05rem;color:var(--ink)}.field + input:focus,.field + textarea:focus{border-color:#17a99a;box-shadow:0 0 0 3px #17a99a17}.field + textarea{resize:vertical;min-height:65px;font-size:.94rem}.hint{font-size:.78rem;color:var(--muted);margin-top:5px}.error{font-size:.86rem;color:var(--danger);min-height:20px;margin:10px 0}.hr{border:0;border-top:1px solid var(--line);margin:20px 0}.inline-info{display:flex;justify-content:space-between;background:var(--soft);border-radius:12px;padding:12px 13px;margin-top:13px;font-size:.9rem}.inline-info b{font-variant-numeric:tabular-nums}.helper{background:#f0f7fa;color:#446477;padding:13px;border-radius:13px;font-size:.82rem;line-height:1.55;margin:15px 0}.space{height:8px}input[type=file]{display:none}*:focus-visible{outline:3px solid #17a99a;outline-offset:2px}
+    *{box-sizing:border-box}html{font-size:16px}body{margin:0;background:#f5f8fa;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding-bottom:calc(91px + env(safe-area-inset-bottom));-webkit-tap-highlight-color:transparent}button,input,textarea{font:inherit}button{cursor:pointer}.shell{max-width:700px;margin:0 auto}.top{background:var(--navy);padding:calc(25px + env(safe-area-inset-top)) 23px 93px;color:white;border-radius:0 0 28px 28px}.brand{display:flex;align-items:center;justify-content:space-between}.eyebrow{font-size:.77rem;letter-spacing:.12em;text-transform:uppercase;color:#abc8d8;font-weight:700}.title{font-size:1.63rem;letter-spacing:-.04em;font-weight:800;margin:5px 0}.top-sub{margin:6px 0 0;color:#c1d2df;font-size:.89rem}.icon-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:13px;padding:9px 11px;color:white;font-size:1.1rem}.container{padding:0 16px}.odo{background:white;border-radius:23px;padding:20px;margin-top:-69px;position:relative;box-shadow:0 12px 40px rgba(15,33,54,.12);border:1px solid rgba(255,255,255,.8)}.flex{display:flex;align-items:center;justify-content:space-between;gap:12px}.muted{color:var(--muted)}.small{font-size:.85rem}.odo-number{font-size:2.35rem;letter-spacing:-.065em;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 16px;line-height:1.1}.odo-number span{font-size:.98rem;letter-spacing:0;font-weight:600;color:var(--muted)}.btn{border:0;border-radius:12px;background:var(--navy);color:#fff;font-weight:750;padding:11px 16px;white-space:nowrap}.btn.primary{background:var(--teal);color:#052827}.btn.soft{color:var(--ink);background:var(--soft)}.btn.danger{background:#fff0f0;color:var(--danger)}.btn.full{width:100%}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:14px}.stat{border:1px solid var(--line);background:white;border-radius:16px;padding:15px 12px;box-shadow:var(--shadow)}.stat strong{display:block;font-size:1.55rem;font-weight:800;margin-bottom:4px}.stat span{font-size:.77rem;color:var(--muted);font-weight:600}.stat.red strong{color:var(--danger)}.stat.yellow strong{color:var(--warn)}.stat.grey strong{color:var(--blue)}.section-header{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:25px 2px 14px}.section-header h2{font-size:1.12rem;letter-spacing:-.025em;margin:0}.section-header span{font-size:.79rem;color:var(--muted)}.filters{display:flex;overflow:auto;gap:8px;padding-bottom:5px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.pill{background:#e9f0f4;color:#486073;border:0;padding:9px 15px;border-radius:999px;font-weight:700;font-size:.83rem;white-space:nowrap}.pill.active{background:var(--navy);color:white}.list{display:flex;flex-direction:column;gap:9px;margin:12px 0 23px}.item{display:flex;align-items:center;gap:13px;width:100%;border:1px solid var(--line);border-radius:16px;padding:14px 13px;background:white;text-align:left;box-shadow:var(--shadow);color:inherit}.glyph{height:44px;width:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:13px;background:#eff6f8;font-size:1.24rem}.itembody{flex:1;min-width:0}.itemname{font-weight:760;font-size:.98rem;margin-bottom:4px}.itemmeta{color:var(--muted);font-size:.79rem}.right{text-align:right;max-width:44%}.status{font-size:.8rem;font-weight:790;line-height:1.35}.status.due{color:var(--danger)}.status.soon{color:var(--warn)}.status.good{color:#188b7a}.status.unknown{color:#748597}.progress{height:5px;border-radius:50px;background:#e9eff2;margin-top:10px;overflow:hidden}.fill{height:100%;background:var(--teal);border-radius:50px}.fill.due{background:var(--danger)}.fill.soon{background:#d99a2f}.disclaimer{font-size:.8rem;color:#687d8d;line-height:1.5;padding:1px 3px 22px}.nav{position:fixed;bottom:0;left:0;right:0;padding:9px 15px calc(9px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:9;backdrop-filter:blur(12px)}.nav-inner{max-width:560px;width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px;align-items:center}.nav button{border:0;background:transparent;color:#657989;border-radius:12px;padding:7px 3px 3px;font-size:.73rem;font-weight:650}.nav button .em{display:block;font-size:1.28rem;margin-bottom:3px}.nav button.active{background:#e5f5f2;color:#0b796c}.pane{display:none}.pane.active{display:block}.history-entry{background:white;padding:16px;border-radius:15px;margin:9px 0;border:1px solid var(--line)}.history-km{font-weight:800}.empty{border:1px dashed #cbd8df;border-radius:16px;padding:24px;text-align:center;color:var(--muted);background:#fff;line-height:1.6}.setting-card{background:white;padding:17px;border-radius:17px;border:1px solid var(--line);margin-bottom:12px}.setting-card h3{margin:0 0 8px;font-size:1rem}.setting-card p{margin:0 0 16px;color:var(--muted);font-size:.86rem;line-height:1.6}.buttons{display:flex;gap:9px;flex-wrap:wrap}.overlay{position:fixed;inset:0;background:rgba(13,29,41,.55);z-index:20;display:none;align-items:flex-end;justify-content:center}.overlay.open{display:flex}.sheet{width:min(700px,100%);background:#fff;border-radius:25px 25px 0 0;padding:24px 22px calc(21px + env(safe-area-inset-bottom));max-height:95vh;overflow-y:auto;box-shadow:0 -20px 80px rgba(0,0,0,.1)}.sheet h3{font-size:1.28rem;margin:0 0 5px}.sheet p{color:var(--muted);line-height:1.5;margin:0 0 18px;font-size:.88rem}.sheet-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:13px}.close{background:var(--soft);color:var(--ink);border:0;border-radius:10px;width:34px;height:34px;font-size:1.3rem}.field{display:block;font-weight:720;font-size:.86rem;margin:14px 0 7px}.field + input,.field + textarea{width:100%;border:1px solid #ccd9e1;border-radius:12px;background:#fff;outline:none;padding:13px 14px;font-size:1.05rem;color:var(--ink)}.field + input:focus,.field + textarea:focus{border-color:#17a99a;box-shadow:0 0 0 3px #17a99a17}.field + textarea{resize:vertical;min-height:65px;font-size:.94rem}.hint{font-size:.78rem;color:var(--muted);margin-top:5px}.error{font-size:.86rem;color:var(--danger);min-height:20px;margin:10px 0}.hr{border:0;border-top:1px solid var(--line);margin:20px 0}.inline-info{display:flex;justify-content:space-between;background:var(--soft);border-radius:12px;padding:12px 13px;margin-top:13px;font-size:.9rem}.inline-info b{font-variant-numeric:tabular-nums}.helper{background:#f0f7fa;color:#446477;padding:13px;border-radius:13px;font-size:.82rem;line-height:1.55;margin:15px 0}.space{height:8px}input[type=file]{display:none}*:focus-visible{outline:3px solid #17a99a;outline-offset:2px}
     .notice{display:none;border:1px solid #cce8dc;background:#ecf9f4;color:#124a38;padding:14px 15px;border-radius:15px;margin:12px 0;font-size:.86rem;line-height:1.5}.notice.show{display:block}.notice.warning{background:#fff6e8;color:#80500a;border-color:#ecd4a5}.notice.critical{background:#fff1f1;color:#9f3030;border-color:#f2c3c3}.notice h3{margin:0 0 5px;font-size:.95rem}.notice .buttons{margin-top:9px}.notice .btn{font-size:.81rem;padding:9px 11px}.version{font-size:.79rem;color:#657989;margin-top:15px}.backup-status{font-size:.83rem;color:#47687a;line-height:1.5;margin:8px 0 0}.btn:disabled{opacity:.45;cursor:not-allowed}
     .guide-list{display:grid;gap:10px;margin:12px 0 23px}.guide-card{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid var(--line);background:#fff;border-radius:16px;box-shadow:var(--shadow);text-align:left;color:inherit}.guide-thumb{width:68px;height:68px;border-radius:14px;object-fit:cover;background:#eef3f6;flex-shrink:0;border:1px solid #e7eef3}.guide-title{font-weight:780;font-size:.98rem;margin-bottom:4px}.guide-sub{font-size:.8rem;color:var(--muted);line-height:1.45}.guide-note{font-size:.77rem;color:#188b7a;font-weight:700;margin-top:6px}.sheet-photo{width:100%;border-radius:18px;display:block;background:#f4f7fa;border:1px solid var(--line);margin:2px 0 14px}.guide-section{margin:14px 0}.guide-section h4{margin:0 0 7px;font-size:.93rem}.guide-section ul{margin:0;padding-left:18px;color:var(--ink);line-height:1.6}.guide-section li{margin:4px 0}.guide-tip{background:#f5fbfa;border:1px solid #d7eeea;color:#295f59;padding:12px 13px;border-radius:13px;font-size:.83rem;line-height:1.55;margin-top:10px}.guide-section p{margin:0;color:var(--ink);line-height:1.6;font-size:.9rem}.guide-quote{background:#fffaf0;border:1px solid #f2dfad;color:#6b5625;padding:12px 13px;border-radius:13px;font-size:.84rem;line-height:1.6;margin-top:10px}.guide-quote ul{margin:6px 0 0;padding-left:18px}.guide-mini{color:var(--muted);font-size:.78rem;margin-top:7px;line-height:1.5}
 
     .guide-divider{margin:25px 0 12px;border-top:1px solid var(--line);padding-top:18px}.guide-divider h3{margin:0 0 6px;font-size:1.07rem}.guide-divider p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.55}.guide-price{font-size:.86rem;color:#176a61;font-weight:800;margin:8px 0 4px}.price-note{color:var(--muted);font-size:.76rem;line-height:1.5}.guide-card .guide-note{color:#176a61}.guide-section ul li{line-height:1.58}.guide-section h4{margin-bottom:9px}.guide-hero{height:200px;max-width:100%;object-fit:contain;background:#f2f5f7}.guide-repair-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;margin:15px 0}.guide-repair-card h4{margin:0 0 9px}.warning-strip{background:#fff5e6;border:1px solid #f1d9b3;padding:14px;border-radius:16px;color:#78551a;font-size:.85rem;line-height:1.6}.edit-price{margin:12px 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}.edit-price input{width:100%;border:1px solid #ccd9e1;border-radius:11px;padding:10px;font-size:.94rem}.mini-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.helper-wide{padding:14px;border-radius:14px;background:#f1f8f9;color:#3c5966;font-size:.85rem;line-height:1.6}.badge-noperiodic{display:inline-block;padding:5px 8px;border-radius:999px;background:#eef4f9;color:#56738b;font-size:.75rem;font-weight:750}.price-row{background:#f0faf8;padding:13px;border-radius:12px}.price-row strong{display:block;color:#11685c;font-size:1rem;margin-top:3px}.guide-dl{font-size:.85rem;margin:12px 0;color:var(--muted)}.guide-dl a{color:#136f81;word-break:break-word}
+
+    /* 5-tab navigation: the raised central Home button echoes the supplied sketch. */
+    .nav{padding-top:12px;min-height:calc(73px + env(safe-area-inset-bottom));overflow:visible}
+    .nav-inner button{position:relative;min-width:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;line-height:1.15;min-height:49px;padding:5px 0;border-radius:13px;font-size:.68rem;letter-spacing:-.01em;transition:background .18s ease,color .18s ease}
+    .nav-inner button .em{font-size:1.3rem;line-height:1;margin-bottom:2px}
+    .nav-inner button svg{width:21px;height:21px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-bottom:1px}
+    .nav-inner button.home-tab{height:69px;min-height:69px;transform:translateY(-17px);background:#102235;color:#fff;border-radius:21px 21px 18px 18px;box-shadow:0 8px 18px rgba(16,34,53,.27);font-size:.73rem;font-weight:850;isolation:isolate;z-index:2}
+    .nav-inner button.home-tab::before{content:"";position:absolute;inset:-7px -7px -6px;background:#fff;border-radius:26px;z-index:-2}
+    .nav-inner button.home-tab::after{content:"";position:absolute;inset:0;background:linear-gradient(150deg,#1b435c,#102235);border-radius:20px;z-index:-1}
+    .nav-inner button.home-tab.active::after{background:linear-gradient(140deg,#116d72,#102235)}
+    .nav-inner button.home-tab svg{width:25px;height:25px;stroke-width:2.1}
+    .nav-inner button:not(.home-tab).active{background:#e5f5f2;color:#0b796c}
+    #pane-home .odo{margin-top:-69px}
+    .analytic-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:23px 0 13px}
+    .analytic-head h2{font-size:1.24rem;margin:0}
+    .analytic-head .small{line-height:1.45}
+    .analysis-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:17px;margin:0 0 13px;box-shadow:var(--shadow)}
+    .analysis-card h3{margin:0 0 7px;font-size:1.02rem}
+    .analysis-card p{line-height:1.55;font-size:.84rem;color:var(--muted);margin:0 0 9px}
+    .analysis-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:0 0 14px}
+    .analysis-stat{background:#fff;border:1px solid var(--line);padding:15px 13px;border-radius:17px;min-width:0}
+    .analysis-stat b{display:block;font-size:1.35rem;font-weight:850;letter-spacing:-.04em;font-variant-numeric:tabular-nums;margin:5px 0;overflow-wrap:anywhere}
+    .analysis-stat span{display:block;font-size:.77rem;line-height:1.45;color:var(--muted)}
+    .analysis-stat.teal b{color:#147d70}
+    .chart-frame{background:#f8fbfc;border:1px solid #e6eef1;border-radius:15px;padding:8px 4px;overflow:hidden;margin-top:13px}
+    .chart-frame svg{width:100%;height:auto;display:block;max-height:300px}
+    .plot-legend{font-size:.73rem;color:var(--muted);margin-top:9px;line-height:1.5}
+    .analysis-metric{padding:11px 0;border-bottom:1px solid var(--line)}
+    .analysis-metric:last-child{border-bottom:0}
+    .analysis-metric strong{display:block;font-size:.88rem;margin-bottom:4px}
+    .analysis-metric span{display:block;color:var(--muted);font-size:.84rem;line-height:1.5}
+    .odo-log-table{width:100%;border-collapse:collapse;font-size:.83rem;font-variant-numeric:tabular-nums}
+    .odo-log-table th{font-size:.75rem;color:var(--muted);font-weight:700;text-align:left;padding:10px 4px;border-bottom:1px solid var(--line)}
+    .odo-log-table td{padding:11px 4px;border-bottom:1px solid var(--line)}
+    .odo-log-table th:last-child,.odo-log-table td:last-child{text-align:right}
+    .odo-log-table tr:last-child td{border-bottom:0}
+    .analysis-help{margin:13px 0 20px;background:#f0f7fa;color:#476779;font-size:.82rem;line-height:1.55;padding:12px;border-radius:14px}
+    .analysis-card details summary{cursor:pointer;font-size:.85rem;color:#245d6f;font-weight:750;padding:10px 0}
+    #pane-analysis{padding-top:3px}
+    @media(min-width:700px){#pane-home .odo{margin-top:-59px}}
     @media(min-width:700px){.top{border-radius:0 0 28px 28px}.container{padding-left:24px;padding-right:24px}.odo{margin-top:-60px}}
   </style>
 </head>
@@ -27,15 +67,28 @@
  <div class="shell">
   <header class="top"><div class="brand"><div><div class="eyebrow">THEO DÕI XE MÁY</div><div class="title">Sổ bảo dưỡng xe</div></div><button class="icon-btn" id="top-settings" aria-label="Cài đặt">⚙</button></div><p class="top-sub">Mọi thông tin được lưu trên thiết bị của bạn</p></header>
   <main class="container">
-   <section class="odo"><div class="flex"><span class="muted small">Đồng hồ công tơ mét</span><span class="muted small" id="last-updated"></span></div><div class="odo-number" id="odo-value">— <span>km</span></div><button class="btn primary full" id="update-odo">＋ Cập nhật số km</button></section>
    <div id="data-notice" class="notice" role="alert"></div><div id="update-notice" class="notice" role="status"></div>
-   <section class="pane active" id="pane-home"><div class="stats"><div class="stat red"><strong id="count-due">0</strong><span>Đến / quá hạn</span></div><div class="stat yellow"><strong id="count-soon">0</strong><span>Sắp đến hạn</span></div><div class="stat grey"><strong id="count-unknown">12</strong><span>Chưa thiết lập</span></div></div><div class="section-header"><h2>Lịch bảo dưỡng</h2><span id="count-total">12 hạng mục</span></div><div class="filters" id="filter-bar"><button class="pill active" data-filter="all">Tất cả</button><button class="pill" data-filter="due">Đến hạn</button><button class="pill" data-filter="soon">Sắp đến</button><button class="pill" data-filter="unknown">Chưa thiết lập</button></div><div id="maintenance-list" class="list"></div><p class="disclaimer">Mốc km là giá trị dự kiến để theo dõi, không thay thế hướng dẫn bảo dưỡng của nhà sản xuất. Những hạng mục chưa nhập km bảo dưỡng gần nhất sẽ không được tính hạn.</p></section>
+   <section class="pane" id="pane-analysis">
+    <div class="analytic-head"><div><h2>Phân tích quãng đường</h2><div class="muted small">Lịch sử công tơ mét &amp; thói quen sử dụng</div></div></div>
+    <div id="analysis-stats" class="analysis-grid"></div>
+    <div class="analysis-card"><h3>Biểu đồ số km theo thời gian</h3><p>Mỗi lần nhập đều được lưu. Biểu đồ dùng mốc cuối cùng trong ngày để dễ quan sát.</p><div id="odo-chart"></div><div id="chart-caption" class="plot-legend"></div></div>
+    <div class="analysis-card"><h3>Nhận xét &amp; dự báo</h3><div id="analysis-insights"></div></div>
+    <div class="analysis-card"><div class="flex"><h3 style="margin:0">Nhật ký công tơ mét</h3><button class="btn soft" id="edit-last-reading" type="button" style="font-size:.78rem;padding:9px 10px">✎ Sửa mốc cuối</button></div><p style="margin-top:9px">Ngày nhập, số km và quãng đường tăng kể từ lần ghi trước.</p><div id="odo-log"></div></div>
+    <div class="analysis-help">Các số liệu chỉ dựa vào những mốc km bạn nhập, không phải dữ liệu GPS. Dự báo chỉ mang tính tham khảo; nếu bạn lâu không cập nhật km, hãy nhập số mới trước khi đánh giá lịch bảo dưỡng.</div>
+   </section>
+   <section class="pane active" id="pane-home"><section class="odo"><div class="flex"><span class="muted small">Đồng hồ công tơ mét</span><span class="muted small" id="last-updated"></span></div><div class="odo-number" id="odo-value">— <span>km</span></div><button class="btn primary full" id="update-odo">＋ Cập nhật số km</button></section><div class="stats"><div class="stat red"><strong id="count-due">0</strong><span>Đến / quá hạn</span></div><div class="stat yellow"><strong id="count-soon">0</strong><span>Sắp đến hạn</span></div><div class="stat grey"><strong id="count-unknown">12</strong><span>Chưa thiết lập</span></div></div><div class="section-header"><h2>Lịch bảo dưỡng</h2><span id="count-total">12 hạng mục</span></div><div class="filters" id="filter-bar"><button class="pill active" data-filter="all">Tất cả</button><button class="pill" data-filter="due">Đến hạn</button><button class="pill" data-filter="soon">Sắp đến</button><button class="pill" data-filter="unknown">Chưa thiết lập</button></div><div id="maintenance-list" class="list"></div><p class="disclaimer">Mốc km là giá trị dự kiến để theo dõi, không thay thế hướng dẫn bảo dưỡng của nhà sản xuất. Những hạng mục chưa nhập km bảo dưỡng gần nhất sẽ không được tính hạn.</p></section>
    <section class="pane" id="pane-guide"><div class="section-header"><h2>Hướng dẫn bộ phận</h2><span>Ảnh minh hoạ</span></div><div class="helper">Mục này dành cho người dùng chưa rành xe máy. Chạm vào từng hạng mục để xem ảnh minh hoạ thực tế, biết bộ phận nằm ở đâu, nhận ra dấu hiệu bất thường, và tham khảo cách nói chuyện với thợ khi cần kiểm tra.</div><div class="guide-divider"><h3>Hạng mục kiểm tra định kỳ</h3><p>Giá tham khảo cho các dòng xe tay ga phổ thông tại Việt Nam; không phải báo giá cố định.</p></div><div id="guide-list" class="guide-list"></div><div class="guide-divider"><h3>Linh kiện kiểm tra khi có sự cố</h3><p>Các bộ phận dưới đây không có mốc thay định kỳ trong app. Chỉ kiểm tra hoặc sửa khi xuất hiện bất thường và đã có chẩn đoán phù hợp.</p></div><div id="extra-list" class="guide-list"></div><div class="warning-strip"><strong>Trước khi đồng ý sửa:</strong> yêu cầu thợ chỉ ra bằng chứng, báo giá tách riêng công và phụ tùng, và cho biết phương án thay thế. Nếu liên quan phanh, lái, nhiên liệu hoặc chết máy, ưu tiên an toàn và xử lý sớm.</div><details class="setting-card" style="margin-top:14px"><summary style="cursor:pointer;font-weight:760">6 câu hỏi giúp tránh sửa chữa không cần thiết</summary><ol id="repair-advice" style="padding-left:18px;font-size:.87rem;line-height:1.65"></ol></details><div class="guide-dl">Tra cứu giá theo mã xe tại <a href="https://www.honda.com.vn/xe-may/phu-tung" target="_blank" rel="noopener noreferrer">Honda Việt Nam</a> (cần Internet). Giá tại cửa hàng và công lắp có thể khác.</div><div class="disclaimer">Ảnh minh hoạ mang tính tổng quát cho nhiều dòng xe tay ga. Vị trí thực tế có thể khác đôi chút giữa các mẫu xe.</div></section>
    <section class="pane" id="pane-history"><div class="section-header"><h2>Lịch sử đã bảo dưỡng</h2><span id="history-count"></span></div><div id="history-list"></div></section>
-   <section class="pane" id="pane-settings"><div class="section-header"><h2>Cài đặt & dữ liệu</h2></div><div class="setting-card"><h3>Sao lưu dữ liệu</h3><p>Xuất số km, 12 mốc bảo dưỡng, lịch sử sửa chữa không định kỳ và giá cá nhân đã chỉnh thành JSON; có thể khôi phục từ file đã lưu. Không cần tài khoản hay máy chủ.</p><div class="buttons"><button class="btn" id="export-btn">↓ Xuất bản sao</button><button class="btn soft" id="share-btn">↗ Chia sẻ / Lưu vào Tệp</button><button class="btn soft" id="import-btn">↑ Khôi phục từ tệp</button></div><input type="file" id="import-file" accept=".json,application/json"><div id="backup-status" class="backup-status"></div><p style="margin-top:12px">Bản sao phải được lưu bên ngoài ứng dụng, ví dụ Tệp (Files) hoặc máy tính. Nên sao lưu trước mỗi lần cập nhật lớn và sau khi bảo dưỡng.</p></div><div class="setting-card"><h3>Cập nhật phần mềm</h3><p>Khi có Internet, ứng dụng tự kiểm tra phiên bản mới. Dữ liệu và lịch sử được lưu riêng, không nằm trong bộ nhớ đệm của mã nguồn.</p><button class="btn soft" id="check-update">⟳ Kiểm tra bản cập nhật</button><div id="update-status" class="backup-status">Chưa kiểm tra.</div><div class="version">Phiên bản ứng dụng: <strong id="app-version">1.9.4</strong></div></div><div class="setting-card"><h3>Quy tắc nhắc bảo dưỡng</h3><p>Sắp đến hạn khi còn không quá 10% chu kỳ, nhưng tối thiểu 100 km và tối đa 500 km. Sau khi xác nhận đã bảo dưỡng, chu kỳ mới bắt đầu từ số km hiện tại.</p><p>Ứng dụng hoạt động offline và chỉ tính lại khi bạn cập nhật km. Không tự đọc đồng hồ xe hay gửi thông báo đẩy theo quãng đường.</p></div><div class="setting-card"><h3>Xóa dữ liệu trên máy</h3><p>Đưa ứng dụng về trạng thái ban đầu. Hãy xuất bản sao trước vì thao tác không thể hoàn tác.</p><button class="btn danger" id="reset-btn">Xóa toàn bộ dữ liệu</button></div><div class="disclaimer">Phiên bản cá nhân • 100% lưu cục bộ • Không gửi dữ liệu ra Internet</div></section>
+   <section class="pane" id="pane-settings"><div class="section-header"><h2>Cài đặt & dữ liệu</h2></div><div class="setting-card"><h3>Sao lưu dữ liệu</h3><p>Xuất số km, toàn bộ nhật ký nhập km, 12 mốc bảo dưỡng, lịch sử sửa chữa không định kỳ và giá cá nhân đã chỉnh thành JSON; có thể khôi phục từ file đã lưu. Không cần tài khoản hay máy chủ.</p><div class="buttons"><button class="btn" id="export-btn">↓ Xuất bản sao</button><button class="btn soft" id="share-btn">↗ Chia sẻ / Lưu vào Tệp</button><button class="btn soft" id="import-btn">↑ Khôi phục từ tệp</button></div><input type="file" id="import-file" accept=".json,application/json"><div id="backup-status" class="backup-status"></div><p style="margin-top:12px">Bản sao phải được lưu bên ngoài ứng dụng, ví dụ Tệp (Files) hoặc máy tính. Nên sao lưu trước mỗi lần cập nhật lớn và sau khi bảo dưỡng.</p></div><div class="setting-card"><h3>Cập nhật phần mềm</h3><p>Khi có Internet, ứng dụng tự kiểm tra phiên bản mới. Dữ liệu và lịch sử được lưu riêng, không nằm trong bộ nhớ đệm của mã nguồn.</p><button class="btn soft" id="check-update">⟳ Kiểm tra bản cập nhật</button><div id="update-status" class="backup-status">Chưa kiểm tra.</div><div class="version">Phiên bản ứng dụng: <strong id="app-version">1.10.0</strong></div></div><div class="setting-card"><h3>Quy tắc nhắc bảo dưỡng</h3><p>Sắp đến hạn khi còn không quá 10% chu kỳ, nhưng tối thiểu 100 km và tối đa 500 km. Sau khi xác nhận đã bảo dưỡng, chu kỳ mới bắt đầu từ số km hiện tại.</p><p>Ứng dụng hoạt động offline và chỉ tính lại khi bạn cập nhật km. Không tự đọc đồng hồ xe hay gửi thông báo đẩy theo quãng đường.</p></div><div class="setting-card"><h3>Xóa dữ liệu trên máy</h3><p>Đưa ứng dụng về trạng thái ban đầu. Hãy xuất bản sao trước vì thao tác không thể hoàn tác.</p><button class="btn danger" id="reset-btn">Xóa toàn bộ dữ liệu</button></div><div class="disclaimer">Phiên bản cá nhân • 100% lưu cục bộ • Không gửi dữ liệu ra Internet</div></section>
   </main>
  </div>
- <nav class="nav" aria-label="Điều hướng"><div class="nav-inner"><button class="active" data-tab="home"><span class="em">◫</span>Tổng quan</button><button data-tab="guide"><span class="em">🖼️</span>Hướng dẫn</button><button data-tab="history"><span class="em">▤</span>Lịch sử</button><button data-tab="settings"><span class="em">⚙</span>Cài đặt</button></div></nav>
+ <nav class="nav" aria-label="Điều hướng"><div class="nav-inner">
+    <button type="button" data-tab="analysis" aria-label="Phân tích"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 3 7-9"/><path d="M15 5h5v5"/><path d="M3 21h18"/></svg>Phân tích</button>
+    <button type="button" data-tab="guide" aria-label="Hướng dẫn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6c-2-2-5-2-9-1v14c4-1 7-1 9 1 2-2 5-2 9-1V5c-4-1-7-1-9 1Z"/><path d="M12 6v14"/></svg>Hướng dẫn</button>
+    <button class="home-tab active" type="button" data-tab="home" aria-label="Tổng quan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Z"/><path d="M9 20v-6h6v6"/></svg>Tổng quan</button>
+    <button type="button" data-tab="history" aria-label="Lịch sử"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>Lịch sử</button>
+    <button type="button" data-tab="settings" aria-label="Cài đặt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4l.6 2.2 1.5.8 2.2-.7 2 3.5-1.6 1.5v1.7l1.6 1.5-2 3.5-2.2-.7-1.5.8L14 20h-4l-.6-2.2-1.5-.8-2.2.7-2-3.5 1.6-1.5v-1.7L3.7 9.5l2-3.5 2.2.7 1.5-.8L10 3Z"/><circle cx="12" cy="11.5" r="3"/></svg>Cài đặt</button>
+   </div></nav>
  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Biểu mẫu chỉnh sửa"><div class="sheet" id="sheet"></div></div>
  <script>
  (()=>{
@@ -47,8 +100,8 @@
    ['loc-gio','Lọc gió',10000,'🌬️'],['bua-con','Búa côn',25000,'🔧'],['day-curoa','Dây curoa',25000,'〰️'],
    ['bi-con','Bi côn',15000,'⚙️'],['nuoc-lam-mat','Nước làm mát',20000,'💧'],['ma-phanh','Má phanh',15000,'🛑']
   ];
-  const defaults=()=>({version:1,currentKm:null,updatedAt:null,items:specs.map(([id,name,interval,icon])=>({id,name,interval,icon,lastKm:null,note:''})),history:[],repairs:[],priceOverrides:{}});
-  const APP_VERSION='1.9.4', RECOVERY_KEY=KEY+'-recovery', FORMAT='so-bao-duong-xe-backup';
+  const defaults=()=>({version:1,currentKm:null,updatedAt:null,items:specs.map(([id,name,interval,icon])=>({id,name,interval,icon,lastKm:null,note:''})),history:[],repairs:[],priceOverrides:{},odometerLog:[]});
+  const APP_VERSION='1.10.0', RECOVERY_KEY=KEY+'-recovery', FORMAT='so-bao-duong-xe-backup';
   const guideMap={
    'lop-truoc':{image:'./img-front-tire.png',summary:'Lốp trước ảnh hưởng trực tiếp đến độ ổn định tay lái, độ bám đường và cảm giác phanh.',location:'Nằm ở bánh trước, là lớp cao su tiếp xúc trực tiếp với mặt đường dưới dè trước.',abnormal:['Gai lốp mòn nhiều hoặc mòn lệch một bên.','Lốp nứt, phù, dính đinh hoặc thường xuyên bị non hơi.','Chạy thấy rung đầu xe, tay lái đảo hoặc phanh không bám.'],talk:['Anh/chị kiểm tra giúp em lốp trước có mòn đến vạch chỉ thị chưa.','Nếu lốp mòn lệch hoặc rung đầu xe, nhờ kiểm tra thêm cân bằng bánh và áp suất lốp.'],tip:'Nếu đi mưa nhiều hoặc hay leo lề, nên kiểm tra lốp trước sớm hơn mốc km.'},
    'lop-sau':{image:'./img-rear-tire.png',summary:'Lốp sau truyền lực kéo xuống mặt đường nên thường mòn nhanh hơn, đặc biệt ở xe tay ga.',location:'Nằm ở bánh sau, gần cụm động cơ và giảm xóc sau.',abnormal:['Gai lốp mòn, lốp chai cứng hoặc bề mặt trơn.','Xe bị trượt khi đề-pa, ôm cua thiếu tự tin, hoặc lắc đuôi nhẹ.','Lốp dính đinh, rò hơi chậm, có vết nứt hoặc phù thành lốp.'],talk:['Anh/chị xem giúp em lốp sau có cần thay chưa, có bị mòn giữa hoặc nứt không.','Nếu xe đề-pa trượt hoặc rung, nhờ kiểm tra lốp sau và cả áp suất lốp.'],tip:'Lốp sau mòn quá mức sẽ làm xe dễ trượt, nhất là khi trời mưa hoặc chở nặng.'},
@@ -78,6 +131,16 @@
       ids.add(it.id);
     }
     for(const e of d.history){if(!e||!specs.some(s=>s[0]===e.itemId)||!validKm(e.km)||typeof e.at!=='string'||Number.isNaN(Date.parse(e.at)))throw Error('Lịch sử bảo dưỡng không hợp lệ.');}
+    if(d.odometerLog!==undefined){
+      if(!Array.isArray(d.odometerLog)||d.odometerLog.length>10000)throw Error('Nhật ký số km không hợp lệ hoặc vượt 10.000 bản ghi.');
+      let lastReading=-1;
+      for(const entry of d.odometerLog){
+        if(!entry||!validKm(entry.km)||typeof entry.at!=='string'||Number.isNaN(Date.parse(entry.at))||typeof entry.id!=='string'||entry.id.length>120||entry.id.length===0)throw Error('Có bản ghi km không hợp lệ.');
+        if(entry.km<lastReading)throw Error('Nhật ký km giảm bất thường; hãy kiểm tra lại tệp sao lưu.');
+        lastReading=entry.km;
+      }
+      if(d.odometerLog.length&&d.currentKm!==d.odometerLog[d.odometerLog.length-1].km)throw Error('Số km hiện tại không khớp nhật ký.');
+    }
     if(JSON.stringify(d).length>3000000)throw Error('Dữ liệu vượt giới hạn 3 MB.');
     if(d.repairs!==undefined){
       if(!Array.isArray(d.repairs)||d.repairs.length>2000)throw Error('Lịch sử sửa chữa không hợp lệ.');
@@ -92,6 +155,11 @@
   function normalizePersonalData(d){
     if(!Array.isArray(d.repairs))d.repairs=[];
     if(!d.priceOverrides||typeof d.priceOverrides!=='object'||Array.isArray(d.priceOverrides))d.priceOverrides={};
+    // Legacy v1.x had currentKm/updatedAt but no log. Only derive a date from an actually stored timestamp.
+    if(!Array.isArray(d.odometerLog)){
+      d.odometerLog=(d.currentKm!==null && typeof d.updatedAt==='string' && !Number.isNaN(Date.parse(d.updatedAt)))
+        ? [{id:'legacy-'+Date.parse(d.updatedAt),km:d.currentKm,at:new Date(d.updatedAt).toISOString()}]:[];
+    }
     return d;
   }
   function parseStored(raw){if(raw===null)return null;const d=JSON.parse(raw);return normalizePersonalData(validate(d));}
@@ -114,7 +182,7 @@
       const raw=JSON.stringify(state);
       localStorage.setItem(KEY,raw);
       if(localStorage.getItem(KEY)!==raw)throw Error('Không đọc lại được dữ liệu đã lưu.');
-      render();renderGuides();return true;
+      render();renderGuides();renderAnalysis();return true;
     }catch(e){
       try{state=load();}catch(_){}
       render();alert('Không thể ghi dữ liệu. Bộ nhớ có thể đầy hoặc bị chặn. Hãy sao lưu và kiểm tra bộ nhớ. Chi tiết: '+e.message);return false;
@@ -159,6 +227,77 @@
     for(const id of ['update-odo','reset-btn'])$(id).disabled=dataLocked;
   }
   function mode(it){if(state.currentKm===null||it.lastKm===null)return {type:'unknown',remaining:null,label:'Chưa thiết lập',due:null,pct:0};const due=it.lastKm+it.interval,remaining=due-state.currentKm,pct=Math.max(0,Math.min(100,((state.currentKm-it.lastKm)/it.interval)*100));const warn=Math.max(100,Math.min(500,Math.round(it.interval*0.1)));if(remaining<=0)return {type:'due',remaining,label:remaining===0?'Đến hạn ngay':`Quá ${fmt(-remaining)} km`,due,pct};if(remaining<=warn)return {type:'soon',remaining,label:`Còn ${fmt(remaining)} km`,due,pct};return {type:'good',remaining,label:`Còn ${fmt(remaining)} km`,due,pct};}
+  function parseDateSafe(iso){const d=new Date(iso);return Number.isFinite(d.getTime())?d:null;}
+  function dayKey(iso){const d=parseDateSafe(iso);if(!d)return '';return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');}
+  function niceDate(iso){const d=parseDateSafe(iso);return d?d.toLocaleDateString('vi-VN'):'—';}
+  function shortDate(iso){const d=parseDateSafe(iso);return d?d.toLocaleDateString('vi-VN',{day:'2-digit',month:'2-digit'}):'—';}
+  function kmPerDayBetween(a,b){const days=(new Date(b.at)-new Date(a.at))/86400000;return days>=1&&b.km>=a.km?{days,km:b.km-a.km,rate:(b.km-a.km)/days}:null;}
+  function analyticsSnapshot(){
+    const rows=(state.odometerLog||[]).slice().sort((a,b)=>new Date(a.at)-new Date(b.at));
+    const byDay=new Map();for(const r of rows)byDay.set(dayKey(r.at),r);
+    const days=[...byDay.values()];
+    const span=days.length>=2?kmPerDayBetween(days[0],days[days.length-1]):null;
+    const last=rows[rows.length-1]||null;
+    const recentDays=last?days.filter(d=>new Date(d.at).getTime()>=new Date(last.at).getTime()-30*86400000):[];
+    const recent=recentDays.length>=2?kmPerDayBetween(recentDays[0],recentDays[recentDays.length-1]):null;
+    const pace=recent&&recent.days>=7&&recent.km>0?{...recent,source:'30 ngày gần nhất'}:span&&span.days>=7&&span.km>0?{...span,source:'toàn bộ giai đoạn ghi nhận'}:null;
+    return {rows,days,span,recent,pace,last};
+  }
+  function buildOdoChart(days){
+    if(!days.length)return '<div class="empty">Chưa có dữ liệu để vẽ biểu đồ. Hãy nhập số km đầu tiên trong Tổng quan.</div>';
+    const W=410,H=245,L=63,R=15,T=21,B=44;
+    const minTime=new Date(days[0].at).getTime(),maxTime=new Date(days[days.length-1].at).getTime();
+    const xs=days.map(d=>new Date(d.at).getTime());
+    let minKm=Math.min(...days.map(d=>d.km)),maxKm=Math.max(...days.map(d=>d.km));
+    if(minKm===maxKm){minKm=Math.max(0,minKm-100);maxKm+=100;}
+    const padding=(maxKm-minKm)*.08;minKm=Math.max(0,minKm-padding);maxKm+=padding;
+    const x=ms=>L+((maxTime===minTime?0.5:(ms-minTime)/(maxTime-minTime)))*(W-L-R);
+    const y=km=>H-B-((km-minKm)/(maxKm-minKm))*(H-T-B);
+    const line=days.map((d,i)=>(i?'L':'M')+x(xs[i]).toFixed(1)+' '+y(d.km).toFixed(1)).join(' ');
+    const area=line+' L '+x(xs[xs.length-1]).toFixed(1)+' '+(H-B)+' L '+x(xs[0]).toFixed(1)+' '+(H-B)+' Z';
+    const ticks=[0,.25,.5,.75,1].map(t=>{const yy=H-B-t*(H-T-B);const val=minKm+t*(maxKm-minKm);return `<line x1="${L}" y1="${yy.toFixed(1)}" x2="${W-R}" y2="${yy.toFixed(1)}" stroke="#dfe9ed" stroke-dasharray="3 5"/><text x="${L-10}" y="${(yy+4).toFixed(1)}" font-size="11" fill="#637b89" text-anchor="end">${fmt(Math.round(val))}</text>`;}).join('');
+    const marks=days.map((d,i)=>`<circle cx="${x(xs[i]).toFixed(1)}" cy="${y(d.km).toFixed(1)}" r="4.5" fill="#0c9588" stroke="white" stroke-width="2"><title>${niceDate(d.at)}: ${fmt(d.km)} km</title></circle>`).join('');
+    const labels=[0,Math.floor((days.length-1)/2),days.length-1].filter((i,p,arr)=>arr.indexOf(i)===p).map(i=>`<text x="${x(xs[i]).toFixed(1)}" y="${H-16}" fill="#61798a" font-size="11" text-anchor="${i===0?'start':i===days.length-1?'end':'middle'}">${shortDate(days[i].at)}</text>`).join('');
+    return `<div class="chart-frame"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Biểu đồ công tơ mét theo ngày, từ ${niceDate(days[0].at)} đến ${niceDate(days[days.length-1].at)}"><defs><linearGradient id="odo-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#25b7aa" stop-opacity=".22"/><stop offset="1" stop-color="#25b7aa" stop-opacity=".02"/></linearGradient></defs>${ticks}<path d="${area}" fill="url(#odo-gradient)"/><path d="${line}" fill="none" stroke="#0e9185" stroke-linejoin="round" stroke-linecap="round" stroke-width="3.3"/>${marks}${labels}</svg></div>`;
+  }
+  function renderAnalysis(){
+    const {rows,days,span,recent,pace,last}=analyticsSnapshot();
+    const total=rows.length>0?rows[rows.length-1].km-rows[0].km:0;
+    const lastAt=last?niceDate(last.at):'Chưa có';
+    $('analysis-stats').innerHTML=`<div class="analysis-stat teal"><span>Quãng đường đã ghi nhận</span><b>${fmt(total)} km</b><span>Từ mốc km đầu tiên (không phải tổng quãng đường của xe)</span></div><div class="analysis-stat"><span>Số lần nhập km</span><b>${fmt(rows.length)}</b><span>Lần gần nhất: ${lastAt}</span></div><div class="analysis-stat"><span>Trung bình theo dữ liệu</span><b>${span?fmt(Math.round(span.rate))+' km/ngày':'—'}</b><span>${span?`${Math.round(span.days)} ngày được theo dõi`:'Cần ít nhất 2 ngày ghi nhận'}</span></div><div class="analysis-stat"><span>Nhịp chạy gần đây</span><b>${recent&&recent.days>=1?fmt(Math.round(recent.rate))+' km/ngày':'—'}</b><span>${recent&&recent.days>=1?'Trong các mốc thuộc 30 ngày cuối':'Chưa đủ dữ liệu 30 ngày'}</span></div>`;
+    $('odo-chart').innerHTML=buildOdoChart(days);
+    $('chart-caption').textContent=days.length>1?`Có ${days.length} ngày có dữ liệu, ${rows.length} lần nhập. Các lần nhập trong cùng một ngày vẫn được giữ đầy đủ ở nhật ký.`:'Cần nhập ít nhất hai ngày khác nhau để thấy đường biến động theo thời gian.';
+    const insights=[];
+    const daysSince=last?(Date.now()-new Date(last.at).getTime())/86400000:0;
+    if(!last)insights.push(['Bắt đầu ghi nhận','Mở Tổng quan, nhập số km hiện tại. Lần sau bạn cập nhật, app sẽ tính được quãng đường thực tế giữa hai mốc.']);
+    else if(!span)insights.push(['Chưa đủ mốc thời gian','Bạn đã có nhật ký, nhưng cần ít nhất hai ngày ghi nhận cách nhau một ngày để tính quãng đường/ngày.']);
+    else insights.push(['Mức sử dụng xe','Trong giai đoạn có dữ liệu, xe tăng '+fmt(span.km)+' km sau khoảng '+Math.round(span.days)+' ngày, trung bình '+fmt(Math.round(span.rate))+' km/ngày. Không suy ra mức tiêu hao xăng từ số km này.']);
+    if(daysSince>14)insights.push(['Dữ liệu có thể đã cũ','Lần nhập gần nhất cách đây khoảng '+Math.floor(daysSince)+' ngày. Hãy cập nhật công tơ mét trước khi dựa vào mốc đến hạn hoặc dự báo.']);
+    const candidates=state.items.map(it=>({it,st:mode(it)})).filter(x=>x.st.due!==null&&x.st.remaining>0).sort((a,b)=>a.st.remaining-b.st.remaining);
+    if(candidates.length&&pace&&last){
+      const next=candidates[0];const daysLeft=next.st.remaining/pace.rate;
+      if(Number.isFinite(daysLeft)&&daysLeft>=0&&daysLeft<10000){
+        const date=new Date(new Date(last.at).getTime()+daysLeft*86400000);
+        insights.push(['Ước tính mốc gần nhất',next.it.name+' còn '+fmt(next.st.remaining)+' km theo số km đã nhập. Nếu tiếp tục đi khoảng '+fmt(Math.round(pace.rate))+' km/ngày ('+pace.source+'), dự kiến đến mốc khoảng '+date.toLocaleDateString('vi-VN')+'. Đây chỉ là phép ngoại suy, không phải hạn bảo dưỡng chắc chắn.']);
+      }
+    }else if(candidates.length){insights.push(['Chưa nên dự báo ngày bảo dưỡng','Muốn ước tính ngày đến hạn, hãy ghi số km trong ít nhất 7 ngày và thực sự có quãng đường phát sinh.']);}
+    else if(last){insights.push(['Nhắc bảo dưỡng','Các hạng mục chưa đặt mốc bảo dưỡng gần nhất hoặc đã đến hạn; hãy xem Tổng quan để kiểm tra.']);}
+    $('analysis-insights').innerHTML=insights.map(([label,value])=>`<div class="analysis-metric"><strong>${safe(label)}</strong><span>${safe(value)}</span></div>`).join('');
+    const n=rows.length;
+    const buildRows=(records,offset)=>records.map((r,i)=>{
+      const index=offset+i;const previous=index>0?rows[index-1]:null;
+      const difference=previous?r.km-previous.km:null;
+      return `<tr><td>${niceDate(r.at)}</td><td>${fmt(r.km)} km</td><td>${difference===null?'Mốc đầu':'+'+fmt(difference)+' km'}</td></tr>`;
+    }).join('');
+    $('edit-last-reading').disabled=dataLocked||!n;
+    if(!n){$('odo-log').innerHTML='<div class="empty">Chưa có bản ghi số km. Các lần nhập mới sẽ tự xuất hiện tại đây.</div>';return;}
+    const limited=rows.slice(Math.max(0,n-12)).reverse();
+    // Table is newest-first; calculate delta using the original ascending index.
+    const body=limited.map(r=>{const index=rows.indexOf(r),prev=index>0?rows[index-1]:null;return `<tr><td>${niceDate(r.at)}</td><td>${fmt(r.km)} km</td><td>${prev?'+'+fmt(r.km-prev.km)+' km':'Mốc đầu'}</td></tr>`;}).join('');
+    const full=rows.slice().reverse().map(r=>{const index=rows.indexOf(r),prev=index>0?rows[index-1]:null;return `<tr><td>${niceDate(r.at)}</td><td>${fmt(r.km)} km</td><td>${prev?'+'+fmt(r.km-prev.km)+' km':'Mốc đầu'}</td></tr>`;}).join('');
+    const thead='<thead><tr><th>Ngày nhập</th><th>Công tơ mét</th><th>Tăng</th></tr></thead>';
+    $('odo-log').innerHTML=`<table class="odo-log-table">${thead}<tbody>${body}</tbody></table>${n>12?`<details><summary>Xem tất cả ${fmt(n)} lần nhập</summary><table class="odo-log-table">${thead}<tbody>${full}</tbody></table></details>`:''}`;
+  }
   function render(){
    $('odo-value').innerHTML=(state.currentKm===null?'—':fmt(state.currentKm))+' <span>km</span>';
    $('last-updated').textContent=state.updatedAt?new Date(state.updatedAt).toLocaleDateString('vi-VN'): 'Chưa cập nhật';
@@ -236,10 +375,30 @@
   const sheetTitle=(title,sub)=>`<div class="sheet-header"><div><h3>${title}</h3><p>${sub}</p></div><button class="close" aria-label="Đóng">×</button></div>`;
   function parseKm(text){const raw=String(text).trim();const grouped=/^\d{1,3}(?:[., ]\d{3})+$/.test(raw);if(!/^\d+$/.test(raw)&&!grouped)return null;const n=Number(raw.replace(/[., ]/g,''));return validKm(n)?n:null;}
   function err(msg){const e=$('form-error');if(e)e.textContent=msg;}
-  function openOdo(){showSheet(`${sheetTitle('Cập nhật công tơ mét','Nhập tổng số km xe đã chạy hiện tại.')}
-    <label class="field" for="new-odo">Số km hiện tại</label><input id="new-odo" inputmode="numeric" type="text" placeholder="Ví dụ: 13500" value="${state.currentKm??''}">
-    <div class="hint">Cho phép sửa lại số km nếu trước đó nhập sai, nhưng không được nhỏ hơn mốc bảo dưỡng đã ghi.</div><div id="form-error" class="error"></div><button class="btn primary full" id="save-odo">Lưu số km</button>`);
-   $('save-odo').onclick=()=>{const n=parseKm($('new-odo').value);if(n===null)return err('Hãy nhập số km nguyên không âm.');const max=Math.max(0,...state.items.map(i=>i.lastKm??0),...state.history.map(e=>e.km));if(n<max)return err(`Không thể nhập nhỏ hơn ${fmt(max)} km đã lưu trong dữ liệu.`);state.currentKm=n;state.updatedAt=new Date().toISOString();if(save())closeSheet();};
+  function readingId(){return crypto.randomUUID?.()||('km-'+Date.now()+'-'+Math.round(Math.random()*1e6));}
+  function openOdo(editLast=false){
+   if(dataLocked){alert('Dữ liệu đang khóa bảo vệ. Hãy khôi phục bản sao hợp lệ trước.');return;}
+   const logs=state.odometerLog||[],last=logs[logs.length-1];
+   if(editLast&&!last){alert('Chưa có bản ghi km để sửa.');return;}
+   const nowLabel=new Date().toLocaleString('vi-VN');
+   showSheet(`${sheetTitle(editLast?'Chỉnh số km vừa nhập':'Cập nhật công tơ mét',editLast?'Sửa lỗi đánh máy ở bản ghi cuối, giữ nguyên ngày nhập ban đầu.':'Mỗi lần lưu sẽ ghi thêm số km và ngày/tháng/năm hiện tại.')}
+    <div class="helper">${editLast?'Ngày nhập gốc: '+safe(new Date(last.at).toLocaleString('vi-VN')):'Ngày ghi nhận: '+safe(nowLabel)+'. Ứng dụng tự lưu ngày và giờ theo điện thoại.'}</div>
+    <label class="field" for="new-odo">Số km trên đồng hồ xe</label><input id="new-odo" inputmode="numeric" type="text" placeholder="Ví dụ: 13500" value="${editLast?last.km:(state.currentKm??'')}">
+    <div class="hint">${editLast?'Giá trị sau sửa không được thấp hơn lần nhập trước hoặc mốc đã bảo dưỡng.':'Số km mới không được nhỏ hơn mốc trước. Nếu đã nhập sai, vào Phân tích → Sửa mốc cuối.'}</div>
+    <div id="form-error" class="error"></div><button class="btn primary full" id="save-odo">${editLast?'Lưu số km đã chỉnh':'Lưu & ghi vào nhật ký'}</button>`);
+   $('save-odo').onclick=()=>{
+     const n=parseKm($('new-odo').value);if(n===null)return err('Hãy nhập số km nguyên không âm.');
+     const highestService=Math.max(0,...state.items.map(i=>i.lastKm??0),...state.history.map(e=>e.km),...(state.repairs||[]).map(e=>e.km??0));
+     const prevLog=editLast&&logs.length>1?logs[logs.length-2].km:0;
+     const minAllowed=Math.max(highestService,editLast?prevLog:Math.max(0,state.currentKm??0));
+     if(n<minAllowed)return err(`Số km không thể nhỏ hơn ${fmt(minAllowed)} km đã được ghi nhận. Nếu cần chỉnh dữ liệu lịch sử cũ hơn, hãy sao lưu rồi xử lý cẩn thận.`);
+     if(!editLast&&logs.length>=10000)return err('Nhật ký đã đạt 10.000 bản ghi. Hãy xuất bản sao trước khi tiếp tục.');
+     if(editLast){if(!confirm(`Sửa mốc km cuối từ ${fmt(last.km)} thành ${fmt(n)} km? Ngày ghi gốc vẫn được giữ.`))return;last.km=n;last.correctedAt=new Date().toISOString();}
+     else logs.push({id:readingId(),km:n,at:new Date().toISOString()});
+     state.currentKm=n;
+     state.updatedAt=editLast?last.at:logs[logs.length-1].at;
+     if(save())closeSheet();
+   };
   }
   function openItem(id){const it=state.items.find(x=>x.id===id);if(!it)return;const m=mode(it);showSheet(`${sheetTitle(safe(it.name),'Chỉnh mốc bảo dưỡng riêng cho hạng mục này.')}
     <div class="inline-info"><span>Trạng thái</span><b class="status ${m.type}">${m.label}</b></div>
@@ -256,7 +415,7 @@
    $('mark-service').onclick=()=>{if(state.currentKm===null)return;const yes=confirm(`Xác nhận đã bảo dưỡng ${it.name} tại ${fmt(state.currentKm)} km?`);if(!yes)return;it.lastKm=state.currentKm;state.history.push({id:crypto.randomUUID?.()||String(Date.now()),itemId:it.id,km:state.currentKm,at:new Date().toISOString()});if(save())closeSheet();};
   }
   function tab(t){document.querySelectorAll('.pane').forEach(e=>e.classList.toggle('active',e.id===`pane-${t}`));document.querySelectorAll('[data-tab]').forEach(e=>e.classList.toggle('active',e.dataset.tab===t));window.scrollTo({top:0,behavior:'instant'});}
-  document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));$('top-settings').onclick=()=>tab('settings');$('update-odo').onclick=openOdo;
+  document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));$('top-settings').onclick=()=>tab('settings');$('update-odo').onclick=()=>openOdo(false);$('edit-last-reading').onclick=()=>openOdo(true);
   $('filter-bar').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x.dataset.filter===filter));render();});
   $('overlay').addEventListener('click',e=>{if(e.target===$('overlay'))closeSheet()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet();});
   $('export-btn').onclick=exportBackup;
@@ -267,7 +426,7 @@
     try{
       if(file.size>3500000)throw Error('Tệp quá lớn (tối đa 3,5 MB).');
       const candidate=decodeBackup(await file.text());
-      const summary=`Sao lưu có ${candidate.history.length} lượt bảo dưỡng; đồng hồ ${candidate.currentKm===null?'chưa thiết lập':fmt(candidate.currentKm)+' km'}.`;
+      const summary=`Sao lưu có ${candidate.history.length} lượt bảo dưỡng, ${(candidate.odometerLog||[]).length} mốc km; đồng hồ ${candidate.currentKm===null?'chưa thiết lập':fmt(candidate.currentKm)+' km'}.`;
       if(!confirm(summary+'\n\nBạn có chắc muốn KHÔI PHỤC? Dữ liệu đang có trên điện thoại sẽ bị thay thế. Nên xuất bản sao hiện tại trước.'))return;
       if(!confirm('Xác nhận lần cuối: thay thế toàn bộ mốc bảo dưỡng và lịch sử hiện tại bằng tệp này?'))return;
       // Sao lưu dữ liệu trước phục hồi rồi mới ghi. Không xóa nếu việc ghi thất bại.
@@ -278,7 +437,7 @@
         const serialized=JSON.stringify(candidate);
         localStorage.setItem(KEY,serialized);
         if(localStorage.getItem(KEY)!==serialized)throw Error('Không thể xác nhận dữ liệu đã lưu.');
-        state=candidate;dataLocked=false;loadWarning='';render();renderGuides();showDataNotice();updateWriteControls();
+        state=candidate;dataLocked=false;loadWarning='';render();renderGuides();renderAnalysis();showDataNotice();updateWriteControls();
         setBackupStatus('Khôi phục thành công '+new Date().toLocaleString('vi-VN')+'.');alert('Đã khôi phục dữ liệu thành công.');
       }catch(err){state=oldState;dataLocked=oldLock;throw err;}
     }catch(ex){alert('Không thể nhập: '+ex.message)}finally{e.target.value=''}
@@ -325,6 +484,7 @@
 
   render();
   renderGuides();
+  renderAnalysis();
  })();
  </script>
 </body>

@@ -1,5 +1,5 @@
 /* Sổ bảo dưỡng xe - chỉ lưu bộ mã ứng dụng; KHÔNG đụng đến localStorage. */
-const APP_CACHE='so-bao-duong-app-v5.0.0';
+const APP_CACHE='so-bao-duong-app-v1.10.0';
 const FILES=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./img-engine-oil.png','./img-clutch-shoes.png','./img-variator-rollers.png','./img-front-tire.png','./img-rear-tire.png','./img-air-filter-real.png','./img-gear-oil-real.png','./img-spark-plug-real.png','./img-brake-fluid-real.png','./img-coolant-real.png','./img-cvt-belt-real.png','./img-brake-pads-real.png','./extra-placeholder.svg'];
 const CACHE_PREFIXES=['so-bao-duong-v','so-bao-duong-app-v'];
 self.addEventListener('install',event=>{
